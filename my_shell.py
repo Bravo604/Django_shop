@@ -1,0 +1,36 @@
+from shop.models import Item, Purchase
+from django.utils import timezone
+
+i = Item(name="Notebook Lennovo", price=1500)
+i.save()
+i1 = Item(name="Notebook Asus", price=1000)
+i1.save()
+i2 = Item(name="Notebook Acer", price=800)
+i2.save()
+i3 = Item(name="TV Samsung", price=2000)
+i3.save()
+i4 = Item(name="Iphone 13", price=1500)
+i4.save()
+
+
+p = Purchase(name="Попов Тимур Владимирович", age=39, item=i, data_purchase=timezone.now())
+p.save()
+p1 = Purchase(name="Попов Сергей Владимирович", age=41, item=i2, data_purchase=timezone.now())
+p1.save()
+p2 = Purchase(name="Попов Андрей Владимирович", age=33, item=i1, data_purchase=timezone.now())
+p2.save()
+p3 = Purchase(name="Кадыров Канат Кулубекович", age=38, item=i3, data_purchase=timezone.now())
+p3.save()
+p4 = Purchase(name="Иванов Иван Иванович", age=19, item=i, data_purchase=timezone.now())
+p4.save()
+p5 = Purchase(name="Сергеев Сергей Сергеевич", age=25, item=i4, data_purchase=timezone.now())
+p5.save()
+p6 = Purchase(name="Петров Николай Николаевич", age=18, item=i1, data_purchase=timezone.now())
+p6.save()
+p7 = Purchase(name="Попов Тимур Владимирович", age=20, item=i2, data_purchase=timezone.now())
+p7.save()
+p8 = Purchase(name="Сидоров Иван Иванович ", age=30, item=i, data_purchase=timezone.now())
+p8.save()
+p9 = Purchase(name="Цветков Владимир Владимирович", age=40, item=i3, data_purchase=timezone.now())
+p9.save()
+
