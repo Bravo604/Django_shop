@@ -16,6 +16,5 @@ class Purchase(models.Model):
     data_purchase = models.DateTimeField('purchase data')
 
     def __str__(self):
-        return f'{self.name} - {self.age} - {self.data_purchase}'
-
+        return f'{self.name} - {self.age} - {self.item} - {self.data_purchase}'
 
